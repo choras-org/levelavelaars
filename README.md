@@ -23,9 +23,9 @@ _Feel free to remove this section when you're done :)_
 ## Process
 
 This is where you can describe how you tackled the task
-
-- First we did..
-- Then we tried..
+- (-1) Setup CHORAS (easy!)
+- (0) Add geoms to our repo
+- (1) Load geom in CHORAS
 - Finally we..
 - etc.
 
@@ -35,35 +35,32 @@ For reproducibility of your results we would like to know what inputs you used t
 
 ### Geometry
 
-_Room2215_simple OR Room2215_withAbs_
+_Room2215_simple_
 
 ### Source position
 
-- x:
-- y:
-- z:
+- x: 9
+- y: 5
+- z: 2
 
 ### Receiver position
 
-- x:
-- y:
-- z:
+- x: 2.5
+- y: 5
+- z: 1.5
 
 ### Surfaces
 
 If you created materials you can list them here with their absorption coefficients:
 
-- _material name_: 63 Hz, 125 Hz, 250 Hz, 500 Hz, 1000 Hz, 2000 Hz, 4000 Hz
+![alt text](triangles.png)
+![alt text](floor2.png)
 
-    _Example:_
 
-- My new material, 0.1, 0.2, 0.3, 0.4, 0.5, 0.1, 0.1
 
 Material properties:
+![alt text](matprops.png)
 
-- Surface [1]: _material name_
-- Surface [6]: _material name_
-- Rest of the surfaces: _material name_
 
 ### Settings
 
@@ -72,8 +69,13 @@ You can paste the JSON here by clicking on the Open as JSON button in the Settin
 - DE
 
 ```json
-<DE settings as JSON>
-```
+{
+  "sim_len_type": "ir_length",
+  "de_ir_length": 1,
+  "de_c0": 343,
+  "edt": 35,
+  "de_lc": 0.05
+}```
 
 - DG
 
@@ -85,17 +87,25 @@ You can paste the JSON here by clicking on the Open as JSON button in the Settin
 
 Here you can list your 3 proposals for improving CHORAS. Out of the box ideas are welcome!
 
-- Proposal 1:
-- Proposal 2:
-- Proposal 3:
+- Proposal 1: Uploading geometry is solely an icon without text, we had to guess
+- Proposal 2:Support for libre fenix engine based webbrowers that have scrict privacy settings (3D view broken there)
+- Proposal 3: More sources (then run parralel for all sources!)
+- Proposal 4: Radiation integrals to extrapolate solutions outside boundaries
+- Proposal 5: Add 8khz band (at least for material props)
+- Proposal 6: make clear what min-max bands we are going to compute in. In csv output they are not shown either
+- Proposal 7: CFL conditions to be computed automatically based on time integration scheme, (related to timestep & mesh)
+- Proposal 8: Points per lambda to 1/6 wavelength
 
 ## Functionality issues
 
 Please list any functionality issues you found:
 
-- Issue 1
-- Issue 2
-- ...
+- Issue 1: window resize closes openend popup windows
+- Issue 2: Inconistent in decimating characters (dots, comma's)
+- Source of absorbing values. The values of absorbing panels is peculiar (high frequent roll-off).
+- Issue 4: If you choose EDT as simulation length, is the energy decay treshold still relevent (or a redundant input?)
+- Issue 5: IR length input irrelevant for EDT method
+- "Issue 6": When using fully reflective surfaces, low frequent components decay relatively slow, so ensure the simulation time is long enough. 
 
 ## Feedback / experience
 
