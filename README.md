@@ -75,7 +75,9 @@ You can paste the JSON here by clicking on the Open as JSON button in the Settin
   "de_c0": 343,
   "edt": 35,
   "de_lc": 1
-}```
+}
+
+```
 
 - DG
 
@@ -89,7 +91,9 @@ You can paste the JSON here by clicking on the Open as JSON button in the Settin
   "dg_poly_order": 2,
   "dg_ppw": 6,
   "dg_cfl": 1
-}```
+}
+
+```
 
 ## 3 proposals for improving CHORAS
 
