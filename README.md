@@ -16,9 +16,9 @@ _Feel free to remove this section when you're done :)_
 
 ## Members
 
-- _Member 1_
-- _Member 2_
-- _Member 3_
+- Jelle 
+- Casper
+- (Tim in middag!)
 
 ## Process
 
