@@ -81,7 +81,15 @@ You can paste the JSON here by clicking on the Open as JSON button in the Settin
 
 ```json
 <DG settings as JSON>
-```
+{
+  "dg_freq_upper_limit": 200,
+  "dg_c0": 343,
+  "dg_rho0": 1.213,
+  "dg_ir_length": 1,
+  "dg_poly_order": 2,
+  "dg_ppw": 6,
+  "dg_cfl": 1
+}```
 
 ## 3 proposals for improving CHORAS
 
@@ -106,6 +114,7 @@ Please list any functionality issues you found:
 - Issue 4: If you choose EDT as simulation length, is the energy decay treshold still relevent (or a redundant input?)
 - Issue 5: IR length input irrelevant for EDT method
 - "Issue 6": When using fully reflective surfaces, low frequent components decay relatively slow, so ensure the simulation time is long enough. 
+- Issue 7: Sometimes, the GUI randomly switches solver when editing parameters
 
 ## Feedback / experience
 
