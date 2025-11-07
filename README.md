@@ -1,4 +1,4 @@
-# your_team_name
+# levelaverlaars
 
 Hello! This is a template repository in which you can upload your deliverables for the CHORAS ASSA Workshop. The deliverables are
 
