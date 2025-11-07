@@ -121,7 +121,7 @@ Please list any functionality issues you found:
 
 Below you can tell us your feedback or describe your experience of working with CHORAS today! Please start every bullet with **I like..** or **I wish/wonder..**
 
-- I like ..
-- I wish ..
-- I wonder ..
-- ..
+- I like the look and feel of the GUI. It is fantastic!
+- I wish that my proposals will be added :D
+- I wonder how many packages will follow in the future. I hope a lot!
+
