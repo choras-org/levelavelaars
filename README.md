@@ -74,7 +74,7 @@ You can paste the JSON here by clicking on the Open as JSON button in the Settin
   "de_ir_length": 1,
   "de_c0": 343,
   "edt": 35,
-  "de_lc": 0.05
+  "de_lc": 1
 }```
 
 - DG
@@ -115,6 +115,7 @@ Please list any functionality issues you found:
 - Issue 5: IR length input irrelevant for EDT method
 - "Issue 6": When using fully reflective surfaces, low frequent components decay relatively slow, so ensure the simulation time is long enough. 
 - Issue 7: Sometimes, the GUI randomly switches solver when editing parameters
+- Issue 8: DE: longer simulation time yields worse INR...?
 
 ## Feedback / experience
 
